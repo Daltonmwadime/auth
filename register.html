@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth App - Register</title>
+  </head>
+  <body>
+    <!-- Page heading -->
+    <h1>Auth App</h1>
+
+    <!-- Navigation links to main pages -->
+    <nav>
+      <a href="register.html">Register</a> | <a href="login.html">Login</a> |
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <hr />
+
+    <h2>Register</h2>
+
+    <!-- Registration form: submits user data via POST to the register endpoint -->
+    <form action="register" method="post" style="color: black">
+      <!-- First name input — required -->
+      <label for="firstname">First Name:</label><br />
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        placeholder="Enter your first name"
+        required="required"
+      /><br /><br />
+
+      <!-- Last name input -->
+      <label for="lastname">Last Name:</label><br />
+      <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        placeholder="Enter your last name"
+        required="required"
+      /><br /><br />
+
+      <!-- Email input -->
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required="required"
+      /><br /><br />
+
+      <!-- Phone number input -->
+      <label for="phone">Phone Number:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+      /><br /><br />
+
+      <!-- Username input -->
+      <label for="username">Username:</label><br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Choose a username"
+        required="required"
+      /><br /><br />
+
+      <!-- Gender dropdown — optional selection -->
+      <label for="gender">Gender:</label><br />
+      <select id="gender" name="gender">
+        <option value="">-- Select Gender --</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option></select
+      ><br /><br />
+
+      <!-- Password input -->
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Create a password"
+        required="required"
+      /><br /><br />
+
+      <!-- Confirm password input -->
+      <label for="confirm">Confirm Password:</label><br />
+      <input
+        type="password"
+        id="confirm"
+        name="confirm"
+        placeholder="Repeat your password"
+        required="required"
+      /><br /><br />
+
+      <!-- Submit button -->
+      <button type="submit">Register</button>
+    </form>
+
+    <hr />
+
+    <!-- Link to login page for existing users -->
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+
+    <hr />
+
+    <!-- Copyright notice -->
+    <p>© Copyright 2026 Dalton mwadime. All rights reserved.</p>
+  </body>
+</html>
