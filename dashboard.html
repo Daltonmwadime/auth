@@ -9,7 +9,203 @@
   <h1 style="color: blue">Auth App</h1>
 
   <!-- Navigation links to main pages -->
-  <nav>
+  <nav><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth App - Dashboard</title>
+  </head>
+  <body>
+    <!-- Page heading -->
+    <h1 style="color: blue">Auth App</h1>
+
+    <!-- Navigation links to main pages -->
+    <nav>
+      <a href="register.html">Register</a> | <a href="login.html">Login</a> |
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <hr />
+
+    <!-- Dashboard section: displays registered users in a table -->
+    <h2>Dashboard - Users</h2>
+
+    <!-- User data table -->
+    <table style="color: black; border-collapse: collapse" border="5">
+      <thead>
+        <tr>
+          <!-- Fixed: renamed "Name" to "ID" to match the actual row data -->
+          <th width="100">ID</th>
+          <th width="100">First Name</th>
+          <th width="100">Last Name</th>
+          <th width="100">Email</th>
+          <th width="100">Phone Number</th>
+          <th width="100">Username</th>
+          <th width="100">Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- User record 1 -->
+        <tr align="center">
+          <td>1</td>
+          <td>Tony</td>
+          <td>Mwadime</td>
+          <td>tony@email.com</td>
+          <td>+254 783 855 005</td>
+          <td>tonym</td>
+          <td>Male</td>
+        </tr>
+
+        <!-- User record 2 -->
+        <tr align="center">
+          <td>2</td>
+          <td>Ann</td>
+          <td>Mwadime</td>
+          <td>ann@email.com</td>
+          <td>+254 700 123 456</td>
+          <!-- NOTE: Username updated to match the name "Ann" -->
+          <td>annm</td>
+          <td>Female</td>
+        </tr>
+
+        <!-- User record 3 -->
+        <tr align="center">
+          <td>3</td>
+          <td>Sara</td>
+          <td>Nthoki</td>
+          <td>sara@email.com</td>
+          <td>+254 727 142 937</td>
+          <td>saran</td>
+          <td>Female</td>
+        </tr>
+
+        <!-- User record 4 -->
+        <tr align="center">
+          <td>4</td>
+          <td>Faith</td>
+          <td>Wanjiku</td>
+          <td>faith@email.com</td>
+          <td>+254 722 444 555</td>
+          <td>faithw</td>
+          <td>Female</td>
+        </tr>
+
+        <!-- User record 5 -->
+        <tr align="center">
+          <td>5</td>
+          <td>Kevin</td>
+          <td>Mwangi</td>
+          <td>kevin@email.com</td>
+          <td>+254 733 666 777</td>
+          <td>kevinm</td>
+          <td>Male</td>
+        </tr>
+
+        <!-- User record 6 -->
+        <tr align="center">
+          <td>6</td>
+          <td>Grace</td>
+          <td>Wakesho</td>
+          <td>grace@email.com</td>
+          <td>+254 715 503 978</td>
+          <td>grace_w</td>
+          <td>Female</td>
+        </tr>
+
+        <!-- User record 7 -->
+        <tr align="center">
+          <!-- Fixed: removed inconsistent inline color style -->
+          <td>7</td>
+          <td>Dennis</td>
+          <td>Ngugi</td>
+          <td>dennis@email.com</td>
+          <td>+254 755 111 222</td>
+          <td>denngugi</td>
+          <td>Male</td>
+        </tr>
+
+        <!-- User record 8 -->
+        <tr align="center">
+          <td>8</td>
+          <td>Joel</td>
+          <td>Maganga</td>
+          <td>joel@email.com</td>
+          <td>+254 766 333 444</td>
+          <!-- Fixed: replaced invalid <joel> tag with plain text -->
+          <td>joel</td>
+          <td>Male</td>
+        </tr>
+
+        <!-- User record 9 -->
+        <tr align="center">
+          <td>9</td>
+          <td>Simon</td>
+          <td>Irungu</td>
+          <td>simon@email.com</td>
+          <td>+254 777 555 666</td>
+          <td>simonir</td>
+          <td>Male</td>
+        </tr>
+
+        <!-- User record 10 -->
+        <tr align="center">
+          <td>10</td>
+          <td>Bryson</td>
+          <!-- Fixed: corrected "MbuguaS" typo to "Mbugua" -->
+          <td>Mbugua</td>
+          <td>bryson@email.com</td>
+          <td>+254 788 777 888</td>
+          <td>brysonm</td>
+          <td>Male</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <!-- Contact form: submits message via POST -->
+    <footer>
+      <h2>Contact Form</h2>
+      <form action="submit_form" method="post">
+        <!-- Email input field -->
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+          required
+        /><br /><br />
+
+        <!-- Message textarea field -->
+        <label for="message">Message</label><br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write to me"
+          rows="4"
+          required
+        ></textarea
+        ><br /><br />
+
+        <!-- Submit button -->
+        <button type="submit">Send</button>
+      </form>
+    </footer>
+
+    <hr />
+
+    <!-- Logout link — redirects to login page -->
+    <p><a href="login.html">Logout</a></p>
+
+    <hr />
+
+    <!-- Copyright notice -->
+    <p>© Copyright 2025 Dalton mwadime. All rights reserved.</p>
+  </body>
+</html>
+
     <a href="register.html">Register</a> | <a href="login.html">Login</a> |
     <a href="dashboard.html">Dashboard</a>
   </nav>
