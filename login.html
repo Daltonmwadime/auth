@@ -1,7 +1,65 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" /><!doctype html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth App - Login</title>
+  </head>
+  <body>
+    <!-- Page heading -->
+    <h1>Auth App</h1>
+
+    <!-- Navigation links to main pages -->
+    <nav>
+      <a href="register.html">Register</a> | <a href="login.html">Login</a> |
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <hr />
+
+    <h2>Login</h2>
+
+    <!-- Login form: submits credentials via POST to the login endpoint -->
+    <form action="login" method="post">
+      <!-- Username input — required -->
+      <label for="username">Username:</label><br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        required
+      /><br /><br />
+
+      <!-- Password input — required -->
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      /><br /><br />
+
+      <!-- Submit button -->
+      <button type="submit">Login</button>
+    </form>
+
+    <hr />
+
+    <!-- Link to registration page for new users -->
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+
+    <hr />
+
+    <!-- Copyright notice -->
+    <p>© Copyright 2025 Dalton mwadime. All rights reserved.</p>
+  </body>
+</html>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auth App - Login</title>
   </head>
