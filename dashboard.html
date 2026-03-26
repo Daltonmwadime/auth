@@ -4,17 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auth App - Dashboard</title>
-  </head>
-  <!-- Page heading -->
-  <h1 style="color: blue">Auth App</h1>
-
-  <!-- Navigation links to main pages -->
-  <nav><!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auth App - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Page heading -->
@@ -23,7 +13,7 @@
     <!-- Navigation links to main pages -->
     <nav>
       <a href="register.html">Register</a> | <a href="login.html">Login</a> |
-      <a href="dashboard.html">Dashboard</a>
+      <a href="dashboard.html">Dashboard</a> | <a href="home.html">Home</a>
     </nav>
 
     <hr />
@@ -202,183 +192,6 @@
     <hr />
 
     <!-- Copyright notice -->
-    <p>© Copyright 2025 Dalton mwadime. All rights reserved.</p>
-  </body>
-</html>
-
-    <a href="register.html">Register</a> | <a href="login.html">Login</a> |
-    <a href="dashboard.html">Dashboard</a>
-  </nav>
-
-  <hr />
-
-  <!-- Dashboard section: displays registered users in a table -->
-  <h2>Dashboard - Users</h2>
-
-  <!-- User data table. border="5" is deprecated — consider using CSS instead -->
-  <table style="color: black" border="5">
-    <thead style="color: black">
-      <tr>
-        <!-- ⚠️ NOTE: First column header says "Name" but the data rows use it for the ID/number -->
-        <th width="100">Name</th>
-        <th width="100">First Name</th>
-        <th width="100">Last Name</th>
-        <th width="100">Email</th>
-        <th width="100">Phone Number</th>
-        <th width="100">Username</th>
-        <th width="100">Gender</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- User record 1 -->
-      <tr align="center">
-        <td>1</td>
-        <td>Tony</td>
-        <td>mwadime</td>
-        <td>tony@email.com</td>
-        <td>+254 783 855 005</td>
-        <td>tonym</td>
-        <td>Male</td>
-      </tr>
-
-      <!-- User record 2 -->
-      <tr align="center">
-        <td>2</td>
-        <td>Ann</td>
-        <td>mwadime</td>
-        <td>ann@email.com</td>
-        <td>+254 700 123 456</td>
-        <td>ann</td>
-        <td>Female</td>
-      </tr>
-
-      <!-- User record 3 -->
-      <tr align="center">
-        <td>3</td>
-        <td>Sara</td>
-        <td>Nthoki</td>
-        <td>sara@email.com</td>
-        <td>+254 727 142 937</td>
-        <td>saran</td>
-        <td>Female</td>
-      </tr>
-
-      <!-- User record 4 -->
-      <tr align="center">
-        <td>4</td>
-        <td>Faith</td>
-        <td>Wanjiku</td>
-        <td>faith@email.com</td>
-        <td>+254 722 444 555</td>
-        <td>faithw</td>
-        <td>Female</td>
-      </tr>
-
-      <!-- User record 5 -->
-      <tr align="center">
-        <td>5</td>
-        <td>Kevin</td>
-        <td>Mwangi</td>
-        <td>kevin@email.com</td>
-        <td>+254 733 666 777</td>
-        <td>kevinm</td>
-        <td>Male</td>
-      </tr>
-
-      <!-- User record 6 -->
-      <tr align="center">
-        <td>6</td>
-        <td>Grace</td>
-        <td>wakesho</td>
-        <td>grace@email.com</td>
-        <td>+254 715 503 978</td>
-        <td>grace_w</td>
-        <td>Female</td>
-      </tr>
-
-      <!-- User record 7 -->
-      <tr align="center">
-        <td>7</td>
-        <td>dennis</td>
-        <td>ngugi</td>
-        <td>dennis@email.com</td>
-        <td>+254 755 111 222</td>
-        <td>dennnngugi</td>
-        <td>Male</td>
-      </tr>
-
-      <!-- User record 8 -->
-      <tr align="center">
-        <td>8</td>
-        <td>joel</td>
-        <td>maganga</td>
-        <td>joel@email.com</td>
-        <td>+254 766 333 444</td>
-        <td>joel-m</td>
-        <td>Male</td>
-      </tr>
-
-      <!-- User record 9 -->
-      <tr align="center">
-        <td>9</td>
-        <td>Simon</td>
-        <td>irungu</td>
-        <td>simon@email.com</td>
-        <td>+254 777 555 666</td>
-        <td>simonir</td>
-        <td>Male</td>
-      </tr>
-
-      <!-- User record 10 -->
-      <tr align="center">
-        <td>10</td>
-        <td>Bryson</td>
-        <!-- ⚠️ NOTE: "MbuguaS" — trailing capital "S" may be a typo -->
-        <td>MbuguaS</td>
-        <td>bryson@email.com</td>
-        <td>+254 788 777 888</td>
-        <td>brysonm</td>
-        <td>Male</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- ⚠️ BUG: <footer> is used here as a contact form container, 
-       but it has `action` and `method` attributes which belong on a <form> tag.
-       Should be wrapped in a <form action="submit_form" method="post"> inside or outside <footer> -->
-  <footer action="submit_form" method="post">
-    <h2><b>Contact Form</b></h2>
-
-    <!-- Email input field -->
-    <label for="emailaddress">Email</label><br />
-    <input
-      type="emailaddress"
-      id="emailaddress"
-      placeholder="Enter Your Email"
-      required
-    /><br /><br />
-
-    <!-- Message textarea field -->
-    <label for="message">Message</label><br />
-    <textarea
-      id="message"
-      placeholder="Write to me"
-      rows="4"
-      required
-    ></textarea
-    ><br />
-  </footer>
-
-  <!-- ⚠️ BUG: <body> tag appears here at the bottom instead of wrapping all content from the top.
-       This is invalid HTML structure — <body> must open before all visible content -->
-  <body>
-    <hr />
-
-    <!-- Logout link — redirects to login page -->
-    <p><a href="login.html">Logout</a></p>
-
-    <hr />
-    <!-- Copyright footer note -->
     <p>© Copyright 2025 Dalton mwadime. All rights reserved.</p>
   </body>
 </html>
