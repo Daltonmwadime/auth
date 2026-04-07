@@ -15,7 +15,62 @@
     </nav>
     <!-- Login form: submits credentials via POST to the login endpoint -->
     <form action="login" method="post">
-      <!-- Username input — required -->
+      <!-- Username input — required --><!doctype html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Auth App - Home</title>
+          <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+          <h1>Auth App</h1>
+          <style></style>
+          <nav>
+            <a href="home.html">Home</a> |
+            <a href="register.html">Register</a> |
+            <a href="login.html">Login</a> |
+            <a href="dashboard.html">Dashboard</a>
+          </nav>
+
+          <hr />
+
+          <h2>Welcome to Auth App</h2>
+
+          <p>This is a simple authentication system built with HTML.</p>
+          <p>Use the links above to navigate the app.</p>
+
+          <ul>
+            <li><a href="register.html">Register</a> - Create a new account</li>
+            <li><a href="login.html">Login</a> - Sign in to your account</li>
+            <li><a href="dashboard.html">Dashboard</a> - View all users</li>
+          </ul>
+
+          <hr />
+          <footer action="submit_form" method="post">
+            <h2><b>Contact Form</b></h2>
+            <label for="emailaddress">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required
+            /><br /><br />
+            <label for="message">Message</label><br />
+            <textarea
+              id="message"
+              placeholder="Write to me"
+              rows="4"
+              required
+            ></textarea
+            ><br />
+          </footer>
+        </body>
+      </html>
+
       <label for="username">Username:</label><br />
       <input
         type="text"
