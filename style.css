@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-family: "Poppins", "Segoe UI", sans-serif;
   font-size: 16px;
   background-color: #0f0f1a;
   color: #e0e0f0;
@@ -64,7 +64,9 @@ nav a {
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 20px;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 nav a:hover {
@@ -161,7 +163,10 @@ a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   box-shadow: 0 4px 14px rgba(255, 107, 53, 0.35);
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
 }
 
 .btn:hover {
@@ -225,7 +230,9 @@ textarea {
   margin-bottom: 18px;
   background-color: #0f0f1a;
   color: #e0e0f0;
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 
 input[type="text"]:focus,
@@ -252,7 +259,9 @@ button[type="submit"] {
   letter-spacing: 2px;
   text-transform: uppercase;
   box-shadow: 0 4px 14px rgba(255, 107, 53, 0.3);
-  transition: background 0.3s, transform 0.2s;
+  transition:
+    background 0.3s,
+    transform 0.2s;
 }
 
 button[type="submit"]:hover {
@@ -322,8 +331,8 @@ tbody td {
 
 /* --- HERO SECTION (index.html) --- */
 .hero {
-  background: linear-gradient(135deg, #1a1a3e, #0f0f1a);
-  color: #ffffff;
+  background: linear-gradient(135deg, hsl(240, 41%, 17%), #0f0f1a);
+  color: #c40d0d;
   padding: 80px 48px;
   text-align: center;
   border-bottom: 4px solid #ff6b35;
@@ -379,7 +388,9 @@ tbody td {
   padding: 28px;
   border-left: 5px solid #ff6b35;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 
   /* Flexbox: stacks card content vertically */
   display: flex;
@@ -456,6 +467,31 @@ footer a {
 }
 
 footer a:hover {
-  color: #ffffff;
+  color: #cf0606;
   text-decoration: underline;
+}
+nav {
+}
+/* style.css */
+
+/* Make the body fill the whole screen and center content */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #140e31;
+}
+
+/* Optional: Give the form a nice container look */
+form {
+  background: rgb(29, 38, 65);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Prevents the form from getting too wide */
 }
